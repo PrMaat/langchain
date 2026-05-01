@@ -1,0 +1,43 @@
+{
+  "name": "@prmaat/langchain",
+  "version": "0.1.0",
+  "description": "PrMaat LangChain integration. A BaseCallbackHandler that signs every LangGraph event with the agent's W3C DID before it hits LangSmith — so traces become cryptographically attributable, not just framework-self-attested. Implements PrMaat Verification Spec v0.1 §4.3 (checkpoint-bound payload binding to avoid signature/trace desync under async streaming).",
+  "keywords": [
+    "prmaat",
+    "langchain",
+    "langgraph",
+    "langsmith",
+    "did",
+    "audit-chain",
+    "signed-traces"
+  ],
+  "homepage": "https://prmaat.com/spec/v0.1",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "files": [
+    "src/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node test/handler.test.mjs"
+  },
+  "peerDependencies": {
+    "@langchain/core": "^0.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@langchain/core": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrMaat/langchain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PrMaat/langchain/issues"
+  }
+}
