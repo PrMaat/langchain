@@ -174,6 +174,13 @@ MIT. See [LICENSE](./LICENSE).
 
 - [PrMaat Verification Spec v0.1](https://prmaat.com/spec/v0.1) — the
   spec this handler implements.
+- **[Health Check](https://prmaat.com/health-check)** — paste your
+  passport DID, instantly see which spec dimensions your LangGraph
+  setup already satisfies. Useful right after wiring this handler
+  into a chain to confirm signatures are landing as expected.
+- **[Sub-processor registry](https://prmaat.com/subprocessors)** —
+  PrMaat's own GDPR Art. 28 disclosure + RSS feed for change
+  notifications.
 - [@prmaat/verify](https://github.com/PrMaat/verify) — reference
   verifier, MIT, zero deps.
 - [PrMaat Bridge](https://github.com/PrMaat/bridge) — local relay
